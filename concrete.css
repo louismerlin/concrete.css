@@ -1,0 +1,37 @@
+/*! concrete.css v0.0.1 | MIT License | github.com/louismerlin/concrete.css */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-family: 'Chivo', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 80rem;
+  width: 100%;
+}
+
+button {
+  border-radius: 0;
+  background: white;
+  border: 0.2rem solid black;
+  /*color: white;
+  background: black;
+  border: none;*/
+}
+
+a {
+  color: black;
+}
+
+blockquote {
+  border-left: 0.3rem solid black;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1rem 1.5rem;
+}
