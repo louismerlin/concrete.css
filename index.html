@@ -12,7 +12,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="https://unpkg.com/normalize.css">
-  <link rel="stylesheet" href="https://unpkg.com/concrete.css">
+  <link rel="stylesheet" href="./concrete.css">
 
   <link href="https://fonts.googleapis.com/css?family=Chivo:400,700" rel="stylesheet">
 
@@ -24,8 +24,23 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <!-- Add your site or application content here -->
+  <style>
+    .title {
+      text-align: center;
+      margin-bottom: 0.4rem;
+    }
+    .subtitle {
+      text-align: center;
+      margin-top: 0.2rem;
+    }
+  </style>
+
   <main>
+    <section class="container">
+      <h1 class="title">concrete.css</h1>
+      <p class="subtitle">A simple and to the point CSS microframework</p>
+    </section>
+
     <section class="container">
       <h1>This is an h1 title</h1>
       <h2>This is an h2 title</h2>
@@ -41,6 +56,7 @@
     
     <section class="container">
       <button>Click</button>
+      <button class="is-filled">Click</button>
     </section>
 
     <section class="container">

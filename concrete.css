@@ -2,6 +2,7 @@
 
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,19 +11,26 @@ body {
   font-family: 'Chivo', sans-serif;
 }
 
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
 .container {
   margin: 0 auto;
   max-width: 80rem;
   width: 100%;
+  padding: 0 1rem;
 }
 
 button {
   border-radius: 0;
   background: white;
   border: 0.2rem solid black;
-  /*color: white;
+}
+
+button.is-filled {
+  color: white;
   background: black;
-  border: none;*/
 }
 
 a {
