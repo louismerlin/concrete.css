@@ -50,32 +50,46 @@
     </header>
 
     <section class="container">
-      <h3>What is this ?</h3>
+      <h2>What is this ?</h2>
       <p>This is a CSS microframework, built for lighness and simplicity.</p>
     </section>
 
     <section class="container">
-      <h3>Getting Started</h3>
-      <h4>In your HTML <code>&lthead&gt</code></h4>
-      <p>
-      <pre>
-        <code>
-&ltlink href="https://fonts.googleapis.com/css?family=chivo:400,700" rel="stylesheet"&gt
+      <h2>Getting Started</h2>
+      <h3>In your HTML <code>&lthead&gt</code></h3>
+      <pre><code>&ltlink href="https://fonts.googleapis.com/css?family=chivo:400,700" rel="stylesheet"&gt
 &ltlink rel="stylesheet" href="https://unpkg.com/normalize.css"&gt
-&ltlink rel="stylesheet" href="https://unpkg.com/concrete.css"&gt</code>
-      </pre>
-      </p>
+&ltlink rel="stylesheet" href="https://unpkg.com/concrete.css"&gt</code></pre>
+      <h3>In your javascript code</h3>
+      <p>Add the dependencies:</p>
+      <pre><code>yarn add normalize.css concrete.css</code></pre>
+      <p>Import them somewhere in your code:</p>
+      <pre><code>import 'normalize.css'
+import 'concrete.css'</code></pre>
     </section>
 
     <section class="container">
-      <h3>Typography</h3>
-      <h1>This is an h1 title</h1>
-      <h2>This is an h2 title</h2>
-      <h3>This is an h3 title</h3>
-      <h4>This is an h4 title</h4>
-      <h5>This is an h5 title</h5>
-      <h6>This is an h6 title</h6>
-      <p>Hello world! This is a paragraph. Here is a <a href="./">link</a>, and I am <strong>bold</strong></p>
+      <h2>Typography</h2>
+      <p>Concrete does not redefine headings, although normalize does. This is what you can expect:</p>
+      <h1>h1 heading</h1>
+      <h2>h2 heading</h2>
+      <h3>h3 heading</h3>
+      <h4>h4 heading</h4>
+      <h5>h5 heading</h5>
+      <h6>h6 heading</h6>
+      <p>This is a paragraph. Here is a <a href="./">link</a>, and I am <strong>strong</strong>. This is <u>underlined</u> and this is <em>emphasised</em>, while this is <small>small</small>.</p>
+      <pre><code>&lth1&gth1 heading&lt/h1&gt
+&lth2&gth2 heading&lt/h2&gt
+&lth3&gth3 heading&lt/h3&gt
+&lth4&gth4 heading&lt/h4&gt
+&lth5&gth5 heading&lt/h5&gt
+&lth6&gth6 heading&lt/h6&gt
+&ltp&gt
+  This is a paragraph.
+  Here is a &lta href="./"&gtlink&lt/a&gt, and I am &ltstrong&gtstrong&lt/strong&gt.
+  This is &ltu&gtunderlined&lt/u&gt and this is &ltem&gtemphasised&lt/em&gt, while this is &ltsmall&gtsmall&lt/small&gt.
+&lt/p&gt
+</code></pre>
     </section>
 
     <section class="container">
@@ -86,7 +100,7 @@
 
     <section class="container">
       <h3>Blockquotes</h3>
-      <blockquote>I'm just quoting myself</blockquote>
+      <blockquote>"I'm quoting myself" - <em>Louis Merlin</em></blockquote>
     </section>
   </main>
 

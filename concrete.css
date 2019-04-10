@@ -1,5 +1,7 @@
 /*! concrete.css v0.0.2 | MIT License | github.com/louismerlin/concrete.css */
 
+/* The Basics */
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -15,12 +17,20 @@ body {
   box-sizing: inherit;
 }
 
+a {
+  color: black;
+}
+
+/* A cool container */
+
 .container {
   margin: 0 auto;
   max-width: 80rem;
   width: 100%;
   padding: 0 1rem;
 }
+
+/* The Button */
 
 button {
   border-radius: 0;
@@ -33,9 +43,7 @@ button.filled {
   background: black;
 }
 
-a {
-  color: black;
-}
+/* The Blockquote and the Code */
 
 blockquote, pre {
   border-left: 0.3rem solid black;
@@ -47,5 +55,7 @@ blockquote, pre {
 
 pre>code {
   padding: 1rem 1.4rem;
+  font-size: 1.6rem;
   white-space: pre;
+  display: block;
 }
