@@ -44,8 +44,33 @@ button.filled {
 }
 
 /* The List */
+
 ul {
   list-style: square;
+}
+
+/* The Form */
+
+/* TODO */
+
+/* The Table */
+
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0.6rem 0;
+}
+
+td {
+  border-bottom: 0.1rem solid black;
+}
+
+th {
+  border-bottom: 0.2rem solid black;
+  text-align: left;
 }
 
 /* The Blockquote and the Code */
