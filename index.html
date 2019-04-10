@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://unpkg.com/normalize.css">
   <link rel="stylesheet" href="./concrete.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Chivo:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=chivo:400,700" rel="stylesheet">
 
   <meta name="theme-color" content="#ffffff">
 </head>
@@ -25,41 +25,67 @@
   <![endif]-->
 
   <style>
+    .header {
+      margin-top: 14rem;
+      margin-bottom: 14rem;
+    }
     .title {
       text-align: center;
       margin-bottom: 0.4rem;
+      border: solid 0.2rem black;
     }
     .subtitle {
       text-align: center;
       margin-top: 0.2rem;
     }
+    section.container {
+      margin-top: 8rem;
+    }
   </style>
 
   <main>
-    <section class="container">
+    <header class="container header">
       <h1 class="title">concrete.css</h1>
       <p class="subtitle">A simple and to the point CSS microframework</p>
+    </header>
+
+    <section class="container">
+      <h3>What is this ?</h3>
+      <p>This is a CSS microframework, built for lighness and simplicity.</p>
     </section>
 
     <section class="container">
+      <h3>Getting Started</h3>
+      <h4>In your HTML <code>&lthead&gt</code></h4>
+      <p>
+      <pre>
+        <code>
+&ltlink href="https://fonts.googleapis.com/css?family=chivo:400,700" rel="stylesheet"&gt
+&ltlink rel="stylesheet" href="https://unpkg.com/normalize.css"&gt
+&ltlink rel="stylesheet" href="https://unpkg.com/concrete.css"&gt</code>
+      </pre>
+      </p>
+    </section>
+
+    <section class="container">
+      <h3>Typography</h3>
       <h1>This is an h1 title</h1>
       <h2>This is an h2 title</h2>
       <h3>This is an h3 title</h3>
       <h4>This is an h4 title</h4>
       <h5>This is an h5 title</h5>
       <h6>This is an h6 title</h6>
-    </section>
-
-    <section class="container">
       <p>Hello world! This is a paragraph. Here is a <a href="./">link</a>, and I am <strong>bold</strong></p>
     </section>
-    
+
     <section class="container">
-      <button>Click</button>
-      <button class="is-filled">Click</button>
+      <h3>Buttons</h3>
+      <button>just a button</button>
+      <button class="filled">a filled button</button>
     </section>
 
     <section class="container">
+      <h3>Blockquotes</h3>
       <blockquote>I'm just quoting myself</blockquote>
     </section>
   </main>
