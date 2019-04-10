@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 400;
   font-family: 'Chivo', sans-serif;
 }
@@ -25,7 +25,7 @@ a {
 
 .container {
   margin: 0 auto;
-  max-width: 80rem;
+  max-width: 96rem;
   width: 100%;
   padding: 0 1rem;
   position: relative;
@@ -37,6 +37,7 @@ button {
   border-radius: 0;
   background: white;
   border: 0.2rem solid black;
+  padding: 0.4rem 1rem;
 }
 
 button.filled {

@@ -49,6 +49,9 @@
       background: black;
       color: white;
     }
+    .badge {
+      height: 2.7rem;
+    }
   </style>
 
   <main>
@@ -60,6 +63,12 @@
     <section class="container">
       <h2>What is this ?</h2>
       <p>This is a CSS microframework, built for lighness and simplicity.</p>
+      <p>It is best used in pair with <a href="https://necolas.github.io/normalize.css/">normalize.css</a>.</p>
+      <p>Inspired by <a href="https://milligram.io">Milligram</a> and <a href="http://getskeleton.com/">Skeleton</a>.</p>
+      <p>
+        <a href="https://bundlephobia.com/result?p=concrete.css"><img class="badge" src="https://img.shields.io/bundlephobia/minzip/concrete.css.svg?color=black&labelColor=black&style=flat-square" /></a>
+        <a href="https://www.npmjs.com/package/concrete.css"><img class="badge" src="https://img.shields.io/npm/v/concrete.css.svg?color=black&labelColor=black&style=flat-square" /></a>
+      </p>
     </section>
 
     <section class="container">
@@ -109,10 +118,26 @@ import 'concrete.css'</code></pre>
     <section class="container">
       <h2>Lists</h2>
       <p>The concrete list is simply marked by a square.</p>
-      <ul>
-        <li>Unordered element 1</li>
-        <li>Unordered element 2</li>
-      </ul>
+      <div class="row">
+        <div class="column">
+          <ul>
+            <li>Unordered element 1</li>
+            <li>Unordered element 2</li>
+          </ul>
+        </div>
+        <div class="column">
+          <ol>
+            <li>Ordered element 1</li>
+            <li>Ordered element 2</li>
+          </ol>
+        </div>
+        <div class="column">
+          <dl>
+            <dt>Description element 1</dt>
+            <dd>Description element 1.1</dd>
+          </dl>
+        </div>
+      </div>
     </section>
 
     <section class="container">
