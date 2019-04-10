@@ -32,7 +32,7 @@
     .title {
       text-align: center;
       margin-bottom: 0.4rem;
-      border: solid 0.2rem black;
+      border: 0.2rem solid black;
     }
     .subtitle {
       text-align: center;
@@ -41,6 +41,13 @@
     section.container {
       padding-top: 5rem;
       padding-bottom: 5rem;
+    }
+    .column-demo {
+      text-align: center;
+      margin-bottom: 2rem;
+      display: block;
+      background: black;
+      color: white;
     }
   </style>
 
@@ -134,6 +141,26 @@ import 'concrete.css'</code></pre>
           </tr>
         </tbody>
       </table>
+    </section>
+
+    <section class="container">
+      <h2>Grids</h2>
+      <div class="row">
+        <div class="column"><span class="column-demo">.column</span></div>
+        <div class="column"><span class="column-demo">.column</span></div>
+        <div class="column"><span class="column-demo">.column</span></div>
+        <div class="column"><span class="column-demo">.column</span></div>
+      </div>
+      <div class="row">
+        <div class="column"><span class="column-demo">.column</span></div>
+        <div class="column column-50 column-offset-25">
+          <span class="column-demo">
+            .column column-50<br/>
+            .column-offset-25
+          </span>
+        </div>
+      </div>
+</div>
     </section>
 
     <section class="container">
