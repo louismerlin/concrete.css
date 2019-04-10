@@ -43,6 +43,11 @@ button.filled {
   background: black;
 }
 
+/* The List */
+ul {
+  list-style: square;
+}
+
 /* The Blockquote and the Code */
 
 blockquote, pre {

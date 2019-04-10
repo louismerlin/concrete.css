@@ -26,8 +26,8 @@
 
   <style>
     .header {
-      margin-top: 14rem;
-      margin-bottom: 14rem;
+      padding-top: 14rem;
+      padding-bottom: 10rem;
     }
     .title {
       text-align: center;
@@ -39,7 +39,21 @@
       margin-top: 0.2rem;
     }
     section.container {
-      margin-top: 8rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+    .anchor {
+      margin-left: -4rem;
+      float: left;
+      text-decoration: none;
+      display: none;
+    }
+    .anchored {
+      padding-left: 4rem;
+      margin-left: -4rem;
+    }
+    .anchored:hover .anchor {
+      display: inherit;
     }
   </style>
 
@@ -50,7 +64,10 @@
     </header>
 
     <section class="container">
-      <h2>What is this ?</h2>
+      <h2 class="anchored">
+        <a href="#what" name="what" class="anchor" aria-hidden="true">⊡</a>
+        What is this ?
+      </h2>
       <p>This is a CSS microframework, built for lighness and simplicity.</p>
     </section>
 
@@ -96,6 +113,15 @@ import 'concrete.css'</code></pre>
       <h3>Buttons</h3>
       <button>just a button</button>
       <button class="filled">a filled button</button>
+    </section>
+
+    <section class="container">
+      <h3>Lists</h3>
+      <p>The concrete list is simply marked by a square.</p>
+      <ul>
+        <li>Unordered element 1</li>
+        <li>Unordered element 2</li>
+      </ul>
     </section>
 
     <section class="container">
