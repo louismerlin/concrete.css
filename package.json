@@ -2,7 +2,10 @@
   "name": "concrete.css",
   "version": "0.0.4",
   "main": "concrete.css",
-  "repository": "git@github.com:louismerlin/concrete.css.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/louismerlin/concrete.css.git"
+  },
   "author": "Louis Merlin <louis_merlin1@yahoo.fr>",
   "license": "MIT",
   "homepage": "https://louismerlin.github.io/concrete.css/"

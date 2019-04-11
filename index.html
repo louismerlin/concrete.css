@@ -141,6 +141,34 @@ import 'concrete.css'</code></pre>
     </section>
 
     <section class="container">
+      <h2>Forms</h2>
+      <form>
+        <fieldset>
+          <div class="row">
+            <div class="column">
+              <label for="firstNameField">First Name</label>
+              <input type="text" placeholder="John" id="firstNameField">
+            </div>
+            <div class="column">
+              <label for="lastNameField">Last Name</label>
+              <input type="text" placeholder="Doe" id="lastNameField">
+            </div>
+          </div>
+          <label for="ageRangeField">Age Range</label>
+          <select id="ageRangeField">
+            <option value="0-13">0-13</option>
+            <option value="14-17">14-17</option>
+            <option value="18-23">18-23</option>
+            <option value="24+">24+</option>
+          </select>
+          <label for="commentField">Comment</label>
+          <textarea placeholder="I love it, but could you add this feature ?" id="commentField"></textarea>
+          <input type="submit" value="Send">
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="container">
       <h2>Tables</h2>
       <table>
         <thead>
@@ -185,12 +213,16 @@ import 'concrete.css'</code></pre>
           </span>
         </div>
       </div>
-</div>
     </section>
 
     <section class="container">
       <h2>Blockquotes</h3>
       <blockquote>"I'm quoting myself" - <em>Louis Merlin</em></blockquote>
+    </section>
+
+    <section class="container">
+      <h2>Progress Bar</h2>
+      <progress value="40" max="100">40%</progress>
     </section>
   </main>
 
