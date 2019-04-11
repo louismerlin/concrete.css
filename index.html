@@ -74,10 +74,11 @@
     <section class="container">
       <h2>Getting Started</h2>
       <h3>In your HTML <code>&lthead&gt</code></h3>
+      <p>Just drop these lines into your HTML head.</p>
       <pre><code>&ltlink href="https://fonts.googleapis.com/css?family=Chivo:400,700" rel="stylesheet"&gt
 &ltlink rel="stylesheet" href="https://unpkg.com/normalize.css"&gt
 &ltlink rel="stylesheet" href="https://unpkg.com/concrete.css"&gt</code></pre>
-      <h3>In your javascript code</h3>
+      <h3>In your javascript project</h3>
       <p>Add the dependencies:</p>
       <pre><code>yarn add normalize.css concrete.css</code></pre>
       <p>Import them somewhere in your code:</p>
@@ -88,31 +89,58 @@ import 'concrete.css'</code></pre>
     <section class="container">
       <h2>Typography</h2>
       <p>Concrete does not redefine headings, although normalize does. This is what you can expect:</p>
+      <p>This is simply a paragraph.</p>
       <h1>h1 heading</h1>
       <h2>h2 heading</h2>
       <h3>h3 heading</h3>
       <h4>h4 heading</h4>
       <h5>h5 heading</h5>
       <h6>h6 heading</h6>
-      <p>This is a paragraph. Here is a <a href="./">link</a>, and I am <strong>strong</strong>. This is <u>underlined</u> and this is <em>emphasised</em>, while this is <small>small</small>.</p>
-      <pre><code>&lth1&gth1 heading&lt/h1&gt
+      <p>I can be <a href="./">a link</a>.</p>
+      <p>I can be <strong>bold</strong>.</p>
+      <p>I can be <u>underlined</u>.</p>
+      <p>I can be <em>emphasised</em>.</p>
+      <p>I can be <small>small</small>.</p>
+      <pre><code>&ltp&gtThis is simply a paragraph.&lt/p&gt
+
+&lth1&gth1 heading&lt/h1&gt
 &lth2&gth2 heading&lt/h2&gt
 &lth3&gth3 heading&lt/h3&gt
 &lth4&gth4 heading&lt/h4&gt
 &lth5&gth5 heading&lt/h5&gt
 &lth6&gth6 heading&lt/h6&gt
+
 &ltp&gt
-  This is a paragraph.
-  Here is a &lta href="./"&gtlink&lt/a&gt, and I am &ltstrong&gtstrong&lt/strong&gt.
-  This is &ltu&gtunderlined&lt/u&gt and this is &ltem&gtemphasised&lt/em&gt, while this is &ltsmall&gtsmall&lt/small&gt.
+  I can be &lta href="./"&gta link&lt/a&gt.
 &lt/p&gt
-</code></pre>
+&ltp&gt
+  I can be &ltstrong&gtbold&lt/strong&gt.
+&lt/p&gt
+&ltp&gt
+  I can be &ltu&gtunderlined&lt/u&gt.
+&lt/p&gt
+&ltp&gt
+  I can be &ltem&gtemphasised&lt/em&gt.
+&lt/p&gt
+&ltp&gt
+  I can be &ltsmall&gtsmall&lt/small&gt.
+&lt/p&gt</code></pre>
     </section>
 
     <section class="container">
       <h2>Buttons</h2>
-      <button>just a button</button>
-      <button class="filled">a filled button</button>
+      <p>
+        <button>just a button</button>
+        <button class="filled">a filled button</button>
+      </p>
+      <pre><code>&lta class="button" href="./"&gta link button&lt/a&gt
+&lta class="button filled" href="./"&gta filled link button&lt/a&gt
+
+&ltbutton&gta button&lt/button&gt
+&ltbutton class="filled" &gta filled button&lt/button&gt
+
+&ltinput type="submit" value="an input submit button" /&gt
+&ltinput type="submit" class="filled" value="a filled input submit button" /&gt</code></pre>
     </section>
 
     <section class="container">
@@ -138,6 +166,20 @@ import 'concrete.css'</code></pre>
           </dl>
         </div>
       </div>
+      <pre><code>&ltul&gt
+  &ltli&gtUnordered element 1&lt/li&gt
+  &ltli&gtUnordered element 2&lt/li&gt
+&lt/ul&gt
+
+&ltol&gt
+  &ltli&gtOrdered element 1&lt/li&gt
+  &ltli&gtOrdered element 2&lt/li&gt
+&lt/ol&gt
+
+&ltdl&gt
+  &ltdt&gtDescription element 1&lt/dt&gt
+  &ltdd&gtDescription element 1.1&lt/dd&gt
+&lt/dl&gt</code></pre>
     </section>
 
     <section class="container">
