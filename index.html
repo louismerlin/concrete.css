@@ -58,7 +58,11 @@
     <header class="container header">
       <h1 class="title">concrete.css</h1>
       <p class="subtitle">A simple and to the point CSS microframework</p>
-      <p class="subtitle"><a class="button" href="https://github.com/louismerlin/concrete.css">GitHub</a> <a class="button" href="https://www.npmjs.com/package/concrete.css">npm</a> <a class="button" href="https://unpkg.com/concrete.css">CDN</a></p>
+      <p class="subtitle">
+        <a class="button" href="https://github.com/louismerlin/concrete.css">GitHub</a>
+        <a class="button" href="https://www.npmjs.com/package/concrete.css">npm</a>
+        <a class="button" href="https://unpkg.com/concrete.css">CDN</a>
+      </p>
     </header>
 
     <section class="container">
@@ -75,11 +79,11 @@
 
     <section class="container">
       <h2>Getting Started</h2>
-      <h3>In your HTML <code>&lthead&gt</code></h3>
+      <h3>In your HTML <code>&lt;head&gt;</code></h3>
       <p>Just drop these lines into your HTML head.</p>
-      <pre><code>&ltlink href="https://fonts.googleapis.com/css?family=Chivo:400,700" rel="stylesheet"&gt
-&ltlink rel="stylesheet" href="https://unpkg.com/normalize.css"&gt
-&ltlink rel="stylesheet" href="https://unpkg.com/concrete.css"&gt</code></pre>
+      <pre><code>&lt;link href="https://fonts.googleapis.com/css?family=Chivo:400,700" rel="stylesheet"&gt;
+&lt;link rel="stylesheet" href="https://unpkg.com/normalize.css"&gt;
+&lt;link rel="stylesheet" href="https://unpkg.com/concrete.css"&gt;</code></pre>
       <h3>In your javascript project</h3>
       <p>Add the dependencies:</p>
       <pre><code>yarn add normalize.css concrete.css</code></pre>
@@ -103,30 +107,30 @@ import 'concrete.css'</code></pre>
       <p>I can be <u>underlined</u>.</p>
       <p>I can be <em>emphasised</em>.</p>
       <p>I can be <small>small</small>.</p>
-      <pre><code>&ltp&gtThis is simply a paragraph.&lt/p&gt
+      <pre><code>&lt;p&gt;This is simply a paragraph.&lt;/p&gt;
 
-&lth1&gth1 heading&lt/h1&gt
-&lth2&gth2 heading&lt/h2&gt
-&lth3&gth3 heading&lt/h3&gt
-&lth4&gth4 heading&lt/h4&gt
-&lth5&gth5 heading&lt/h5&gt
-&lth6&gth6 heading&lt/h6&gt
+&lt;h1&gt;h1 heading&lt;/h1&gt;
+&lt;h2&gt;h2 heading&lt;/h2&gt;
+&lt;h3&gt;h3 heading&lt;/h3&gt;
+&lt;h4&gt;h4 heading&lt;/h4&gt;
+&lt;h5&gt;h5 heading&lt;/h5&gt;
+&lt;h6&gt;h6 heading&lt;/h6&gt;
 
-&ltp&gt
-  I can be &lta href="./"&gta link&lt/a&gt.
-&lt/p&gt
-&ltp&gt
-  I can be &ltstrong&gtbold&lt/strong&gt.
-&lt/p&gt
-&ltp&gt
-  I can be &ltu&gtunderlined&lt/u&gt.
-&lt/p&gt
-&ltp&gt
-  I can be &ltem&gtemphasised&lt/em&gt.
-&lt/p&gt
-&ltp&gt
-  I can be &ltsmall&gtsmall&lt/small&gt.
-&lt/p&gt</code></pre>
+&lt;p&gt;
+  I can be &lt;a href="./"&gt;a link&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  I can be &lt;strong&gt;bold&lt;/strong&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  I can be &lt;u&gt;underlined&lt;/u&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  I can be &lt;em&gt;emphasised&lt;/em&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  I can be &lt;small&gt;small&lt;/small&gt;.
+&lt;/p&gt;</code></pre>
     </section>
 
     <section class="container">
@@ -135,14 +139,14 @@ import 'concrete.css'</code></pre>
         <button>just a button</button>
         <button class="filled">a filled button</button>
       </p>
-      <pre><code>&lta class="button" href="./"&gta link button&lt/a&gt
-&lta class="button filled" href="./"&gta filled link button&lt/a&gt
+      <pre><code>&lt;a class="button" href="./"&gt;a link button&lt;/a&gt;
+&lt;a class="button filled" href="./"&gt;a filled link button&lt;/a&gt;
 
-&ltbutton&gta button&lt/button&gt
-&ltbutton class="filled" &gta filled button&lt/button&gt
+&lt;button&gt;a button&lt;/button&gt;
+&lt;button class="filled" &gt;a filled button&lt;/button&gt;
 
-&ltinput type="submit" value="an input submit button" /&gt
-&ltinput type="submit" class="filled" value="a filled input submit button" /&gt</code></pre>
+&lt;input type="submit" value="an input submit button" /&gt;
+&lt;input type="submit" class="filled" value="a filled input submit button" /&gt;</code></pre>
     </section>
 
     <section class="container">
@@ -168,20 +172,38 @@ import 'concrete.css'</code></pre>
           </dl>
         </div>
       </div>
-      <pre><code>&ltul&gt
-  &ltli&gtUnordered element 1&lt/li&gt
-  &ltli&gtUnordered element 2&lt/li&gt
-&lt/ul&gt
+      <pre><code>&lt;ul&gt;
+  &lt;li&gt;Unordered element 1&lt;/li&gt;
+  &lt;li&gt;Unordered element 2&lt;/li&gt;
+&lt;/ul&gt;
 
-&ltol&gt
-  &ltli&gtOrdered element 1&lt/li&gt
-  &ltli&gtOrdered element 2&lt/li&gt
-&lt/ol&gt
+&lt;ol&gt;
+  &lt;li&gt;Ordered element 1&lt;/li&gt;
+  &lt;li&gt;Ordered element 2&lt;/li&gt;
+&lt;/ol&gt;
 
-&ltdl&gt
-  &ltdt&gtDescription element 1&lt/dt&gt
-  &ltdd&gtDescription element 1.1&lt/dd&gt
-&lt/dl&gt</code></pre>
+&lt;dl&gt;
+  &lt;dt&gt;Description element 1&lt;/dt&gt;
+  &lt;dd&gt;Description element 1.1&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+    </section>
+
+    <section class="container">
+      <h2>Grids</h2>
+      <p>Concrete comes with a <code>row</code> class and a <code>column</code> class for your basic grid needs.</p>
+      <p>They use <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">flexbox</a>, which means you can easily write small classes to extend the power of the grid.</p>
+      <div class="row">
+        <div class="column"><span class="column-demo">.column</span></div>
+        <div class="column"><span class="column-demo">.column</span></div>
+        <div class="column"><span class="column-demo">.column</span></div>
+        <div class="column"><span class="column-demo">.column</span></div>
+      </div>
+      <pre><code>&lt;div class="row"&gt;
+  &lt;div class="column"&gt;.column&lt;/div&gt;
+  &lt;div class="column"&gt;.column&lt;/div&gt;
+  &lt;div class="column"&gt;.column&lt;/div&gt;
+  &lt;div class="column"&gt;.column&lt;/div&gt;
+&lt;/div&gt;</code></pre>
     </section>
 
     <section class="container">
@@ -210,6 +232,30 @@ import 'concrete.css'</code></pre>
           <input type="submit" value="Send">
         </fieldset>
       </form>
+      <pre><code>&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="column"&gt;
+        &lt;label for="firstNameField"&gt;First Name&lt;/label&gt;
+        &lt;input type="text" placeholder="John" id="firstNameField"&gt;
+      &lt;/div&gt;
+      &lt;div class="column"&gt;
+        &lt;label for="lastNameField"&gt;Last Name&lt;/label&gt;
+        &lt;input type="text" placeholder="Doe" id="lastNameField"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;label for="ageRangeField"&gt;Age Range&lt;/label&gt;
+    &lt;select id="ageRangeField"&gt;
+      &lt;option value="0-13"&gt;0-13&lt;/option&gt;
+      &lt;option value="14-17"&gt;14-17&lt;/option&gt;
+      &lt;option value="18-23"&gt;18-23&lt;/option&gt;
+      &lt;option value="24+"&gt;24+&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;label for="commentField"&gt;Comment&lt;/label&gt;
+    &lt;textarea placeholder="I love it, but could you add this feature ?" id="commentField" &gt;&lt;/textarea&gt;
+    &lt;input type="submit" value="Send"&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
     </section>
 
     <section class="container">
@@ -238,16 +284,6 @@ import 'concrete.css'</code></pre>
           </tr>
         </tbody>
       </table>
-    </section>
-
-    <section class="container">
-      <h2>Grids</h2>
-      <div class="row">
-        <div class="column"><span class="column-demo">.column</span></div>
-        <div class="column"><span class="column-demo">.column</span></div>
-        <div class="column"><span class="column-demo">.column</span></div>
-        <div class="column"><span class="column-demo">.column</span></div>
-      </div>
     </section>
 
     <section class="container">
