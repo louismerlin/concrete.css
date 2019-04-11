@@ -37,6 +37,10 @@ blockquote, dl, figure, form, ol, p, pre, table, ul {
 
 /* The Button */
 
+.button {
+  text-decoration: none;
+}
+
 button,
 .button,
 input[type="button"],
@@ -46,6 +50,7 @@ input[type="submit"] {
   background: white;
   border: 0.2rem solid black;
   padding: 0.4rem 1rem;
+  cursor: pointer;
 }
 
 button.filled,
