@@ -201,11 +201,18 @@ progress::-ms-fill {
   width: 100%;
 }
 
+.row.mobile {
+  flex-direction: row;
+}
+
+.row.mobile .column {
+  width: unset;
+  padding: 0;
+}
+
 @media (min-width: 40.0rem) {
   .row {
     flex-direction: row;
-    margin-left: -1.0rem;
-    width: calc(100% + 2.0rem);
   }
   .row .column {
     margin-bottom: inherit;
