@@ -25,6 +25,10 @@ blockquote, dl, figure, form, ol, p, pre, table, ul {
     margin-bottom: 2.5rem;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* A Cool Container */
 
 .container {
@@ -62,6 +66,14 @@ input[type="submit"].filled {
   background: black;
 }
 
+.button,
+button,
+dd,
+dt,
+li {
+  margin-bottom: 1.0rem;
+}
+
 /* The List */
 
 ul {
@@ -81,7 +93,15 @@ label, legend {
   margin-bottom: .5rem;
 }
 
-input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], textarea, select {
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+textarea,
+select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
