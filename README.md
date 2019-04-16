@@ -2,6 +2,10 @@
 
 <p align="center">A simple and to the point CSS microframework
 
+[![](https://img.shields.io/npm/v/concrete.css.svg)](https://www.npmjs.com/package/concrete.css)
+[![](https://img.shields.io/bundlephobia/minzip/concrete.css.svg)](https://bundlephobia.com/result?p=concrete.css)
+[![](https://img.shields.io/npm/dw/concrete.css.svg)](https://www.npmjs.com/package/concrete.css)
+
 ## What is this ?
 
 This a CSS microframework, built for lighness and simplicity.
