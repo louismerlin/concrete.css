@@ -54,6 +54,7 @@ input[type="reset"],
 input[type="submit"] {
   border-radius: 0;
   background: white;
+  color: #121212;
   border: 0.3rem solid #121212;
   padding: 0.4rem 1rem;
   cursor: pointer;
