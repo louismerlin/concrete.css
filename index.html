@@ -32,7 +32,7 @@
     .title {
       text-align: center;
       margin-bottom: 0.4rem;
-      border: 0.2rem solid #121212;
+      border: 0.3rem solid #121212;
     }
     .subtitle {
       text-align: center;
@@ -51,6 +51,9 @@
     }
     .badge {
       height: 2.7rem;
+    }
+    .column.typography {
+      margin-top: 2rem;
     }
   </style>
 
@@ -95,27 +98,34 @@ import 'concrete.css'</code></pre>
     <section class="container">
       <h2>Typography</h2>
       <p>Concrete does not redefine headings, although normalize does. This is what you can expect:</p>
-      <p>This is simply a paragraph.</p>
-      <h1>h1 heading</h1>
-      <h2>h2 heading</h2>
-      <h3>h3 heading</h3>
-      <h4>h4 heading</h4>
-      <h5>h5 heading</h5>
-      <h6>h6 heading</h6>
-      <p>I can be <a href="./">a link</a>.</p>
-      <p>I can be <strong>bold</strong>.</p>
-      <p>I can be <u>underlined</u>.</p>
-      <p>I can be <em>emphasised</em>.</p>
-      <p>I can be <small>small</small>.</p>
-      <pre><code>&lt;p&gt;This is simply a paragraph.&lt;/p&gt;
-
-&lt;h1&gt;h1 heading&lt;/h1&gt;
+      <div class="row">
+        <div class="column">
+          <h1>h1 heading</h1>
+          <h2>h2 heading</h2>
+          <h3>h3 heading</h3>
+          <h4>h4 heading</h4>
+          <h5>h5 heading</h5>
+          <h6>h6 heading</h6>
+        </div>
+        <div class="column typography">
+          <p>I can simply be a paragraph.</p>
+          <p>I can be <a href="./">a link</a>.</p>
+          <p>I can be <strong>bold</strong>.</p>
+          <p>I can be <u>underlined</u>.</p>
+          <p>I can be <em>emphasised</em>.</p>
+          <p>I can be <small>small</small>.</p>
+        </div>
+      </div>
+      <pre><code>&lt;h1&gt;h1 heading&lt;/h1&gt;
 &lt;h2&gt;h2 heading&lt;/h2&gt;
 &lt;h3&gt;h3 heading&lt;/h3&gt;
 &lt;h4&gt;h4 heading&lt;/h4&gt;
 &lt;h5&gt;h5 heading&lt;/h5&gt;
 &lt;h6&gt;h6 heading&lt;/h6&gt;
 
+&lt;p&gt;
+  I can simply be a paragraph.
+&lt;/p&gt;
 &lt;p&gt;
   I can be &lt;a href="./"&gt;a link&lt;/a&gt;.
 &lt;/p&gt;
