@@ -57,6 +57,10 @@
     .column.typography {
       margin-top: 2rem;
     }
+    figure.highlight {
+      margin-left: 0;
+      margin-right: 0;
+    }
   </style>
 
   <main>
@@ -86,15 +90,21 @@
       <h2>Getting Started</h2>
       <h3>In your HTML <code>&lt;head&gt;</code></h3>
       <p>Just drop these lines into your HTML head.</p>
-      <pre><code>&lt;link href="https://fonts.googleapis.com/css?family=Chivo:400,700" rel="stylesheet"&gt;
-&lt;link rel="stylesheet" href="https://unpkg.com/normalize.css"&gt;
-&lt;link rel="stylesheet" href="https://unpkg.com/concrete.css"&gt;</code></pre>
+{% highlight html %}
+<link href="https://fonts.googleapis.com/css?family=Chivo:400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/normalize.css">
+<link rel="stylesheet" href="https://unpkg.com/concrete.css">
+{% endhighlight %}
       <h3>In your javascript project</h3>
       <p>Add the dependencies:</p>
-      {% highlight bash %}yarn add normalize.css concrete.css{% endhighlight %}
+{% highlight bash %}
+yarn add normalize.css concrete.css
+{% endhighlight %}
       <p>Import them somewhere in your code:</p>
-      <pre><code>import 'normalize.css'
-import 'concrete.css'</code></pre>
+{% highlight js %}
+import 'normalize.css'
+import 'concrete.css'
+{% endhighlight %}
     </section>
 
     <section class="container">
@@ -118,31 +128,33 @@ import 'concrete.css'</code></pre>
           <p>I can be <small>small</small>.</p>
         </div>
       </div>
-      <pre><code>&lt;h1&gt;h1 heading&lt;/h1&gt;
-&lt;h2&gt;h2 heading&lt;/h2&gt;
-&lt;h3&gt;h3 heading&lt;/h3&gt;
-&lt;h4&gt;h4 heading&lt;/h4&gt;
-&lt;h5&gt;h5 heading&lt;/h5&gt;
-&lt;h6&gt;h6 heading&lt;/h6&gt;
+{% highlight html %}
+<h1>h1 heading</h1>
+<h2>h2 heading</h2>
+<h3>h3 heading</h3>
+<h4>h4 heading</h4>
+<h5>h5 heading</h5>
+<h6>h6 heading</h6>
 
-&lt;p&gt;
+<p>
   I can simply be a paragraph.
-&lt;/p&gt;
-&lt;p&gt;
-  I can be &lt;a href="./"&gt;a link&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-  I can be &lt;strong&gt;bold&lt;/strong&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-  I can be &lt;u&gt;underlined&lt;/u&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-  I can be &lt;em&gt;emphasised&lt;/em&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-  I can be &lt;small&gt;small&lt;/small&gt;.
-&lt;/p&gt;</code></pre>
+</p>
+<p>
+  I can be <a href="./">a link</a>.
+</p>
+<p>
+  I can be <strong>bold</strong>.
+</p>
+<p>
+  I can be <u>underlined</u>.
+</p>
+<p>
+  I can be <em>emphasised</em>.
+</p>
+<p>
+  I can be <small>small</small>.
+</p>
+{% endhighlight %}
     </section>
 
     <section class="container">
@@ -151,14 +163,17 @@ import 'concrete.css'</code></pre>
         <button>just a button</button>
         <button class="filled">a filled button</button>
       </p>
-      <pre><code>&lt;a class="button" href="./"&gt;a link button&lt;/a&gt;
-&lt;a class="button filled" href="./"&gt;a filled link button&lt;/a&gt;
+      
+{% highlight html %}
+<a class="button" href="./">a link button</a>
+<a class="button filled" href="./">a filled link button</a>
 
-&lt;button&gt;a button&lt;/button&gt;
-&lt;button class="filled" &gt;a filled button&lt;/button&gt;
+<button>a button</button>
+<button class="filled" >a filled button</button>
 
-&lt;input type="submit" value="an input submit button" /&gt;
-&lt;input type="submit" class="filled" value="a filled input submit button" /&gt;</code></pre>
+<input type="submit" value="an input submit button" />
+<input type="submit" class="filled" value="a filled input submit button" />
+{% endhighlight %}
     </section>
 
     <section class="container">
@@ -184,20 +199,23 @@ import 'concrete.css'</code></pre>
           </dl>
         </div>
       </div>
-      <pre><code>&lt;ul&gt;
-  &lt;li&gt;Unordered element 1&lt;/li&gt;
-  &lt;li&gt;Unordered element 2&lt;/li&gt;
-&lt;/ul&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Ordered element 1&lt;/li&gt;
-  &lt;li&gt;Ordered element 2&lt;/li&gt;
-&lt;/ol&gt;
+{% highlight html %}
+<ul>
+  <li>Unordered element 1</li>
+  <li>Unordered element 2</li>
+</ul>
 
-&lt;dl&gt;
-  &lt;dt&gt;Description element 1&lt;/dt&gt;
-  &lt;dd&gt;Description element 1.1&lt;/dd&gt;
-&lt;/dl&gt;</code></pre>
+<ol>
+  <li>Ordered element 1</li>
+  <li>Ordered element 2</li>
+</ol>
+
+<dl>
+  <dt>Description element 1</dt>
+  <dd>Description element 1.1</dd>
+</dl>
+{% endhighlight %}
     </section>
 
     <section class="container">
@@ -210,12 +228,15 @@ import 'concrete.css'</code></pre>
         <div class="column"><span class="column-demo">.column</span></div>
         <div class="column"><span class="column-demo">.column</span></div>
       </div>
-      <pre><code>&lt;div class="row"&gt;
-  &lt;div class="column"&gt;.column&lt;/div&gt;
-  &lt;div class="column"&gt;.column&lt;/div&gt;
-  &lt;div class="column"&gt;.column&lt;/div&gt;
-  &lt;div class="column"&gt;.column&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+
+{% highlight html %}
+<div class="row">
+  <div class="column">.column</div>
+  <div class="column">.column</div>
+  <div class="column">.column</div>
+  <div class="column">.column</div>
+</div>
+{% endhighlight %}
     </section>
 
     <section class="container">
@@ -244,30 +265,33 @@ import 'concrete.css'</code></pre>
           <input type="submit" value="Send">
         </fieldset>
       </form>
-      <pre><code>&lt;form&gt;
-  &lt;fieldset&gt;
-    &lt;div class="row"&gt;
-      &lt;div class="column"&gt;
-        &lt;label for="firstNameField"&gt;First Name&lt;/label&gt;
-        &lt;input type="text" id="firstNameField"&gt;
-      &lt;/div&gt;
-      &lt;div class="column"&gt;
-        &lt;label for="lastNameField"&gt;Last Name&lt;/label&gt;
-        &lt;input type="text" id="lastNameField"&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;label for="ageRangeField"&gt;Age Range&lt;/label&gt;
-    &lt;select id="ageRangeField"&gt;
-      &lt;option value="0-13"&gt;0-13&lt;/option&gt;
-      &lt;option value="14-17"&gt;14-17&lt;/option&gt;
-      &lt;option value="18-23"&gt;18-23&lt;/option&gt;
-      &lt;option value="24+"&gt;24+&lt;/option&gt;
-    &lt;/select&gt;
-    &lt;label for="commentField"&gt;Comment&lt;/label&gt;
-    &lt;textarea id="commentField" &gt;&lt;/textarea&gt;
-    &lt;input type="submit" value="Send"&gt;
-  &lt;/fieldset&gt;
-&lt;/form&gt;</code></pre>
+
+{% highlight html %}
+<form>
+  <fieldset>
+    <div class="row">
+      <div class="column">
+        <label for="firstNameField">First Name</label>
+        <input type="text" id="firstNameField">
+      </div>
+      <div class="column">
+        <label for="lastNameField">Last Name</label>
+        <input type="text" id="lastNameField">
+      </div>
+    </div>
+    <label for="ageRangeField">Age Range</label>
+    <select id="ageRangeField">
+      <option value="0-13">0-13</option>
+      <option value="14-17">14-17</option>
+      <option value="18-23">18-23</option>
+      <option value="24+">24+</option>
+    </select>
+    <label for="commentField">Comment</label>
+    <textarea id="commentField" ></textarea>
+    <input type="submit" value="Send">
+  </fieldset>
+</form>
+{% endhighlight %}
     </section>
 
     <section class="container">
@@ -296,30 +320,33 @@ import 'concrete.css'</code></pre>
           </tr>
         </tbody>
       </table>
-      <pre><code>&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Name&lt;/th&gt;
-      &lt;th&gt;Year&lt;/th&gt;
-      &lt;th&gt;Size&lt;/th&gt;
-      &lt;th&gt;Comment&lt;/th&gt;
-    &lt;lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Skeleton&lt;/td&gt;
-      &lt;td&gt;2011&lt;/td&gt;
-      &lt;td&gt;5.7kB&lt;/td&gt;
-      &lt;td&gt;Awesome&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Milligram&lt;/td&gt;
-      &lt;td&gt;2015&lt;/td&gt;
-      &lt;td&gt;8.3kB&lt;/td&gt;
-      &lt;td&gt;Amazing&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
+
+{% highlight html %}
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Year</th>
+      <th>Size</th>
+      <th>Comment</th>
+    <lt;/tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Skeleton</td>
+      <td>2011</td>
+      <td>5.7kB</td>
+      <td>Awesome</td>
+    </tr>
+    <tr>
+      <td>Milligram</td>
+      <td>2015</td>
+      <td>8.3kB</td>
+      <td>Amazing</td>
+    </tr>
+  </tbody>
+</table>
+{% endhighlight %}
     </section>
 
     <section class="container">
@@ -327,15 +354,21 @@ import 'concrete.css'</code></pre>
       <blockquote>
         "I'm quoting myself" - <em>Louis Merlin</em>
       </blockquote>
-      <pre><code>&lt;blockquote&gt;
-  "I'm quoting myself" - &lt;em&gt;Louis Merlin&lt;/em&gt;
-&lt;/blockquote&gt;</code></pre>
+
+{% highlight html %}
+<blockquote>
+  "I'm quoting myself" - <em>Louis Merlin</em>
+</blockquote>
+{% endhighlight %}
     </section>
 
     <section class="container">
       <h2>Progress Bar</h2>
       <progress value="40" max="100">40%</progress>
-      <pre><code>&lt;progress value="40" max="100"&gt;40%&lt;/progress&gt;</code></pre>
+
+{% highlight html %}
+<progress value="40" max="100">40%</progress>
+{% endhighlight %}
     </section>
   </main>
 
