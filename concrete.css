@@ -192,6 +192,14 @@ progress::-ms-fill {
   background-color: #121212;
 }
 
+/* The Break Line */
+
+hr {
+  border-color: #121212;
+  border-top-width: 0.3rem;
+  border-bottom-width: 0;
+}
+
 /* The Grid */
 
 .row {
