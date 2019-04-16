@@ -1,4 +1,4 @@
-# [concrete.css](https://louismerlin.github.io/concrete.css/)
+# [concrete.css](https://concrete.style)
 
 > A simple and to the point CSS microframework
 
