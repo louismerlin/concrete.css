@@ -1,6 +1,6 @@
-<h1 align="center"><a href="https://louismerlin.github.io/concrete.css/">concrete.css</a></h1>
+# [concrete.css](https://louismerlin.github.io/concrete.css/)
 
-<p align="center">A simple and to the point CSS microframework
+> A simple and to the point CSS microframework
 
 [![](https://img.shields.io/npm/v/concrete.css.svg)](https://www.npmjs.com/package/concrete.css)
 [![](https://img.shields.io/bundlephobia/minzip/concrete.css.svg)](https://bundlephobia.com/result?p=concrete.css)
