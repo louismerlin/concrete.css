@@ -54,7 +54,7 @@ input[type="reset"],
 input[type="submit"] {
   border-radius: 0;
   background: white;
-  border: 0.2rem solid #121212;
+  border: 0.3rem solid #121212;
   padding: 0.4rem 1rem;
   cursor: pointer;
 }
@@ -137,7 +137,7 @@ td {
 }
 
 th {
-  border-bottom: 0.2rem solid #121212;
+  border-bottom: 0.3rem solid #121212;
   text-align: left;
 }
 
@@ -149,6 +149,11 @@ blockquote, pre {
   margin-right: 0;
   padding: 1rem 1.5rem;
   overflow-y: hidden;
+}
+
+pre {
+  border: 0.1rem dotted #121212;
+  border-left: 0.3rem solid #121212;
 }
 
 pre > code {
