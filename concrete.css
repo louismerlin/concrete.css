@@ -10,6 +10,8 @@ html {
 body {
   font-size: 2rem;
   font-weight: 400;
+  background: white;
+  color: #121212;
   font-family: 'Chivo', sans-serif;
 }
 
@@ -18,7 +20,7 @@ body {
 }
 
 a {
-  color: black;
+  color: #121212;
 }
 
 blockquote, dl, figure, form, ol, p, pre, table, ul {
@@ -52,7 +54,7 @@ input[type="reset"],
 input[type="submit"] {
   border-radius: 0;
   background: white;
-  border: 0.2rem solid black;
+  border: 0.2rem solid #121212;
   padding: 0.4rem 1rem;
   cursor: pointer;
 }
@@ -63,7 +65,7 @@ input[type="button"].filled,
 input[type="reset"].filled,
 input[type="submit"].filled {
   color: white;
-  background: black;
+  background: #121212;
 }
 
 .button,
@@ -106,7 +108,7 @@ select {
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
-  border: 0.1rem solid black;
+  border: 0.1rem solid #121212;
   border-radius: 0;
   box-shadow: none;
   box-sizing: inherit;
@@ -131,18 +133,18 @@ td, th {
 }
 
 td {
-  border-bottom: 0.1rem solid black;
+  border-bottom: 0.1rem solid #121212;
 }
 
 th {
-  border-bottom: 0.2rem solid black;
+  border-bottom: 0.2rem solid #121212;
   text-align: left;
 }
 
 /* The Blockquote and the Code */
 
 blockquote, pre {
-  border-left: 0.3rem solid black;
+  border-left: 0.3rem solid #121212;
   margin-left: 0;
   margin-right: 0;
   padding: 1rem 1.5rem;
@@ -164,9 +166,9 @@ progress {
   border-radius: 0;
   display: block;
   height: 1rem;
-  border: 0.1rem solid black;
+  border: 0.1rem solid #121212;
   background: white;
-  color: black;
+  color: #121212;
   overflow: hidden;
   padding: 0;
   width: 100%;
@@ -175,13 +177,13 @@ progress::-webkit-progress-bar {
   background-color: white;
 }
 progress::-webkit-progress-value {
-  background-color: black;
+  background-color: #121212;
 }
 progress::-moz-progress-bar {
-  background-color: black;
+  background-color: #121212;
 }
 progress::-ms-fill {
-  background-color: black;
+  background-color: #121212;
 }
 
 /* The Grid */
