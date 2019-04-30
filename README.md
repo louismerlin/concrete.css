@@ -12,7 +12,7 @@ This a CSS microframework, built for lighness and simplicity.
  
 Concrete can be a great starting point for a simple website.
  
-It is best used in pair with [normalize.css](https://necolas.github.io/normalize.css/) and the [Chivo](https://www.omnibus-type.com/fonts/chivo/) font.
+It is best used in pair with [normalize.css](https://necolas.github.io/normalize.css/).
 
 Inspired by [Milligram](https://milligram.io/) and [Skeleton](http://getskeleton.com/).
 
@@ -23,7 +23,6 @@ Inspired by [Milligram](https://milligram.io/) and [Skeleton](http://getskeleton
 ### In your HTML `<head>`
 Just drop these lines into your html `<head>`:
 ```
-<link href="https://fonts.googleapis.com/css?family=Chivo:400,700" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/normalize.css">
 <link rel="stylesheet" href="https://unpkg.com/concrete.css">
 ```
