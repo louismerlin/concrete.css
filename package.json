@@ -1,7 +1,7 @@
 {
   "name": "concrete.css",
   "description": "A simple and to the point CSS microframework",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "concrete.css",
   "repository": {
     "type": "git",
