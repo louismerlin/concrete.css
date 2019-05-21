@@ -9,8 +9,10 @@
 ## What is this ?
 
 This a CSS microframework, built for lighness and simplicity.
- 
+
 Concrete can be a great starting point for a simple website.
+
+It also switches to a dark theme if your OS uses one.
  
 It is best used in pair with [normalize.css](https://necolas.github.io/normalize.css/).
 
