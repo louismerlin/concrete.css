@@ -1,4 +1,4 @@
-/*! concrete.css v1.0.1 | MIT License | github.com/louismerlin/concrete.css/ */
+/*! concrete.css v1.1.0 | MIT License | github.com/louismerlin/concrete.css/ */
 
 /* The Basics */
 
@@ -195,9 +195,8 @@ progress::-ms-fill {
 /* The Break Line */
 
 hr {
-  border-color: #121212;
-  border-top-width: 0.3rem;
-  border-bottom-width: 0;
+  border: 0.2rem solid #121212;
+  border-bottom-width: 0.1rem;
 }
 
 /* The Grid */
@@ -234,5 +233,78 @@ hr {
   .row .column {
     margin-bottom: inherit;
     padding: 0 1.0rem;
+  }
+}
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #121212;
+    color: white;
+  }
+  a {
+    color: white;
+  }
+  button,
+  .button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    background: #121212;
+    color: white;
+    border-color: white;
+  }
+  button.filled,
+  .button.filled,
+  input[type="button"].filled,
+  input[type="reset"].filled,
+  input[type="submit"].filled {
+    color: #121212;
+    background: white;
+  }
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="url"],
+  textarea,
+  select {
+    border-color: white;
+  }
+  td {
+    border-bottom-color: white;
+  }
+  th {
+    border-bottom-color: white;
+  }
+  blockquote, pre {
+    border-left-color: white;
+  }
+  pre {
+    border-color: white;
+    border-left-color: white;
+  }
+  progress {
+    border-color: white;
+    background: #121212;
+    color: white;
+  }
+  progress::-webkit-progress-bar {
+    background-color: #121212;
+  }
+  progress::-webkit-progress-value {
+    background-color: white;
+  }
+  progress::-moz-progress-bar {
+    background-color: white;
+  }
+  progress::-ms-fill {
+    background-color: white;
+  }
+  hr {
+    border-color: white;
   }
 }
