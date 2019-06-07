@@ -14,7 +14,7 @@ Concrete can be a great starting point for a simple website.
 
 It also switches to a dark theme if your OS uses one.
  
-It is best used in pair with [normalize.css](https://necolas.github.io/normalize.css/).
+Best used in pair with [normalize.css](https://necolas.github.io/normalize.css/).
 
 Inspired by [Milligram](https://milligram.io/) and [Skeleton](http://getskeleton.com/).
 
