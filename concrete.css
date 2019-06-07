@@ -1,4 +1,4 @@
-/*! concrete.css v1.1.0 | MIT License | github.com/louismerlin/concrete.css/ */
+/*! concrete.css v1.1.1 | MIT License | github.com/louismerlin/concrete.css/ */
 
 /* The Basics */
 
@@ -12,7 +12,7 @@ body {
   font-weight: 400;
   background: white;
   color: #121212;
-  font-family: sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 *, ::after, ::before {
