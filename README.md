@@ -8,7 +8,7 @@
 
 ## What is this ?
 
-This a CSS microframework, built for lighness and simplicity.
+This a CSS microframework, built for lightness and simplicity.
 
 Concrete can be a great starting point for a simple website.
 
