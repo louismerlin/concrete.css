@@ -272,6 +272,7 @@ hr {
   input[type="url"],
   textarea,
   select {
+    color: white;
     border-color: white;
   }
   td {
