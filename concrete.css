@@ -1,4 +1,4 @@
-/*! concrete.css v1.1.2 | MIT License | github.com/louismerlin/concrete.css/ */
+/*! concrete.css v1.2.0 | MIT License | github.com/louismerlin/concrete.css/ */
 
 /* The Basics */
 
@@ -24,10 +24,11 @@ a {
 }
 
 blockquote, dl, figure, form, ol, p, pre, table, ul {
-    margin-bottom: 2.5rem;
+  margin-bottom: 2.2rem;
 }
 
 img {
+  height: auto;
   max-width: 100%;
 }
 
@@ -35,9 +36,9 @@ img {
 
 .container {
   margin: 0 auto;
-  max-width: 96rem;
-  width: 100%;
+  max-width: 66rem;
   padding: 0 1rem;
+  width: 100%;
   position: relative;
 }
 
@@ -52,8 +53,12 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+  display: inline-block;
+  vertical-align: middle;
   border-radius: 0;
   background: white;
+  line-height: 2.2rem;
+  font-size: 1.6rem;
   color: #121212;
   border: 0.3rem solid #121212;
   padding: 0.4rem 1rem;
@@ -86,8 +91,8 @@ ul {
 /* The Form */
 
 fieldset {
-    border-width: 0;
-    padding: 0;
+  border-width: 0;
+  padding: 0;
 }
 
 label, legend {
@@ -113,7 +118,6 @@ select {
   border-radius: 0;
   box-shadow: none;
   box-sizing: inherit;
-  height: 3.8rem;
   padding: .6rem 1.0rem;
   width: 100%;
 }
