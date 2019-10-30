@@ -66,6 +66,36 @@
         color: #121212;
       }
     }
+    .row {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+    .row .column {
+      display: block;
+      flex: 1 1 auto;
+      margin-left: 0;
+      max-width: 100%;
+      width: 100%;
+    }
+    .row.mobile {
+      flex-direction: row;
+    }
+    .row.mobile .column {
+      width: unset;
+      padding: 0;
+    }
+    @media (min-width: 40.0rem) {
+      .row {
+        flex-direction: row;
+        margin: 0 -1rem;
+        width: calc(100% + 2rem);
+      }
+      .row .column {
+        margin-bottom: inherit;
+        padding: 0 1.0rem;
+      }
+    }
   </style>
 
   <main>
@@ -235,27 +265,6 @@ import 'concrete.css'
     </section>
 
     <section class="container">
-      <h2>Grids</h2>
-      <p>Concrete comes with a <code>row</code> class and a <code>column</code> class for your basic grid needs.</p>
-      <p>They use <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">flexbox</a>, which means you can easily write small classes to extend the power of the grid.</p>
-      <div class="row">
-        <div class="column"><span class="column-demo">.column</span></div>
-        <div class="column"><span class="column-demo">.column</span></div>
-        <div class="column"><span class="column-demo">.column</span></div>
-        <div class="column"><span class="column-demo">.column</span></div>
-      </div>
-
-{% highlight html %}
-<div class="row">
-  <div class="column">.column</div>
-  <div class="column">.column</div>
-  <div class="column">.column</div>
-  <div class="column">.column</div>
-</div>
-{% endhighlight %}
-    </section>
-
-    <section class="container">
       <h2>Forms</h2>
       <form>
         <fieldset>
@@ -285,16 +294,13 @@ import 'concrete.css'
 {% highlight html %}
 <form>
   <fieldset>
-    <div class="row">
-      <div class="column">
-        <label for="firstNameField">First Name</label>
-        <input type="text" id="firstNameField">
-      </div>
-      <div class="column">
-        <label for="lastNameField">Last Name</label>
-        <input type="text" id="lastNameField">
-      </div>
-    </div>
+
+    <label for="firstNameField">First Name</label>
+    <input type="text" id="firstNameField">
+
+    <label for="lastNameField">Last Name</label>
+    <input type="text" id="lastNameField">
+
     <label for="ageRangeField">Age Range</label>
     <select id="ageRangeField">
       <option value="0-13">0-13</option>
@@ -302,9 +308,12 @@ import 'concrete.css'
       <option value="18-23">18-23</option>
       <option value="24+">24+</option>
     </select>
+
     <label for="commentField">Comment</label>
     <textarea id="commentField" ></textarea>
+
     <input type="submit" value="Send">
+
   </fieldset>
 </form>
 {% endhighlight %}
