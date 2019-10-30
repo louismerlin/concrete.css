@@ -78,7 +78,10 @@ input[type="submit"].filled {
 button,
 dd,
 dt,
-li {
+li,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   margin-bottom: 1.0rem;
 }
 
