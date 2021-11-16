@@ -4,10 +4,11 @@
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8">
-  <meta name="keywords" content="concrete, concrete.css, CSS, style, minimal, simple, framework, microframework">
+  <meta name="keywords" content="concrete, concrete.css, CSS, style, minimal, simple, framework, microframework, classless">
   <meta name="author" content="Louis Merlin">
-  <meta name="description" content="A simple and to the point CSS microframework">
+  <meta name="description" content="A simple and to the point classless CSS framework">
 
   <title>concrete.css</title>
 
@@ -22,47 +23,13 @@
   <meta name="theme-color" content="#ffffff">
   
   <style>
-    .header {
-      padding-top: 14rem;
-      padding-bottom: 10rem;
-      font-size: 2.5rem;
-    }
-    .title {
-      margin-bottom: 0.6rem;
-    }
-    .subtitle {
-      font-weight: normal;
-      margin-top: 0.6rem;
-    }
-    section.container {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
-    }
-    .column-demo {
-      text-align: center;
-      margin-bottom: 2rem;
-      display: block;
-      background: #121212;
-      color: white;
-    }
     .badge {
-      height: 3rem;
-    }
-    .column.typography {
-      margin-top: 2rem;
+      height: 3.5rem;
+      border: .2rem solid #111;
     }
     figure.highlight {
       margin-left: 0;
       margin-right: 0;
-    }
-    footer {
-      text-align: center;
-    }
-    @media (prefers-color-scheme: dark) {
-      .column-demo {
-        background: white;
-        color: #121212;
-      }
     }
     .row {
       display: flex;
@@ -76,13 +43,6 @@
       max-width: 100%;
       width: 100%;
     }
-    .row.mobile {
-      flex-direction: row;
-    }
-    .row.mobile .column {
-      width: unset;
-      padding: 0;
-    }
     @media (min-width: 40.0rem) {
       .row {
         flex-direction: row;
@@ -95,35 +55,38 @@
       }
     }
   </style>
+
 </head>
 
 <body>
+
   <main>
-    <header class="container header">
-      <h1 class="title">concrete.css</h1>
-      <h3 class="subtitle">A simple and to the point CSS microframework</h3>
-      <p class="menu">
-        <a class="button" href="https://github.com/louismerlin/concrete.css">GitHub</a>
-        <a class="button" href="https://www.npmjs.com/package/concrete.css">npm</a>
-        <a class="button" href="https://unpkg.com/concrete.css">CDN</a>
+
+    <header>
+      <h1>concrete.css</h1>
+      <p>A simple and to the point classless CSS framework</p>
+      <p>
+        <a href="https://github.com/louismerlin/concrete.css"><button>GitHub</button></a>
+        <a href="https://www.npmjs.com/package/concrete.css"><button>npm</button></a>
+        <a href="https://unpkg.com/concrete.css"><button>CDN</button></a>
       </p>
     </header>
 
-    <section class="container">
+    <section>
       <h2>What is this ?</h2>
-      <p>This is a CSS microframework, built for lightness and simplicity.</p>
+      <p>This is a classless CSS framework, built for lightness and simplicity.</p>
       <p>Concrete can be a great starting point for a simple website.</p>
       <p>It also switches to a <strong>dark theme</strong> if your OS uses one.</p>
       <p>Best used in pair with <a href="https://necolas.github.io/normalize.css/">normalize.css</a>.</p>
       <p>Inspired by <a href="https://milligram.io">Milligram</a> and <a href="http://getskeleton.com/">Skeleton</a>.</p>
       <p>
-        <a href="https://www.npmjs.com/package/concrete.css"><img async class="badge" alt="Version badge" src="https://img.shields.io/npm/v/concrete.css.svg?color=121212&labelColor=121212&style=flat-square" /></a>
-        <a href="https://bundlephobia.com/result?p=concrete.css"><img async class="badge" alt="Size badge" src="https://img.shields.io/bundlephobia/minzip/concrete.css.svg?color=121212&labelColor=121212&style=flat-square" /></a>
-        <a href="https://www.npmjs.com/package/concrete.css"><img async class="badge" alt="Downloads badge" src="https://img.shields.io/npm/dw/concrete.css.svg?color=121212&labelColor=121212&style=flat-square" /></a>
+        <a href="https://www.npmjs.com/package/concrete.css"><img async class="badge" alt="Version badge" src="https://img.shields.io/npm/v/concrete.css.svg?color=fff&labelColor=fff&style=flat-square" /></a>
+        <a href="https://bundlephobia.com/result?p=concrete.css"><img async class="badge" alt="Size badge" src="https://img.shields.io/bundlephobia/minzip/concrete.css.svg?color=fff&labelColor=fff&style=flat-square" /></a>
+        <a href="https://www.npmjs.com/package/concrete.css"><img async class="badge" alt="Downloads badge" src="https://img.shields.io/npm/dw/concrete.css.svg?color=fff&labelColor=fff&style=flat-square" /></a>
       </p>
     </section>
 
-    <section class="container">
+    <section>
       <h2>Get Started</h2>
       <h3>In your HTML <code>&lt;head&gt;</code></h3>
       <p>Just drop these lines into your HTML head.</p>
@@ -134,7 +97,7 @@
       <h3>In your javascript project</h3>
       <p>Add the dependencies:</p>
 {% highlight bash %}
-yarn add normalize.css concrete.css
+npm install normalize.css concrete.css
 {% endhighlight %}
       <p>Import them somewhere in your code:</p>
 {% highlight js %}
@@ -143,7 +106,7 @@ import 'concrete.css'
 {% endhighlight %}
     </section>
 
-    <section class="container">
+    <section>
       <h2>Typography</h2>
       <p>Concrete does not redefine headings, although normalize does. This is what you can expect:</p>
       <div class="row">
@@ -155,7 +118,8 @@ import 'concrete.css'
           <h5>h5 heading</h5>
           <h6>h6 heading</h6>
         </div>
-        <div class="column typography">
+        <div class="column">
+          <br />
           <p>I can simply be a paragraph.</p>
           <p>I can be <a href="./">a link</a>.</p>
           <p>I can be <strong>bold</strong>.</p>
@@ -193,28 +157,71 @@ import 'concrete.css'
 {% endhighlight %}
     </section>
 
-    <section class="container">
-      <h2>Buttons</h2>
+    <section>
+      <h2>Sections</h2>
       <p>
-        <button>just a button</button>
-        <button class="filled">a filled button</button>
+        For structuring your page, you can use the <code>&lt;main&gt;</code> element inside of the body.
+        It will be automatically centered on the page, with a maximum width of 640px, like the page you are reading right now.
       </p>
-      
+      <p>
+        To isolate the title of your page, and make it bigger, you can use the <code>&lt;header&gt;</code> element.
+        You can see an example at the top of this page.
+      </p>
+      <p>
+        You can use the <code>&lt;section&gt;</code> element to separate between the different sections.
+        The section will simply be given some bottom padding.
+      </p>
+      <p>
+        The <code>&lt;footer&gt;</code> element will center the text inside of it.
+        You can see an example at the bottom of this page.
+      </p>
 {% highlight html %}
-<a class="button" href="./">a link button</a>
-<a class="button filled" href="./">a filled link button</a>
+<main>
 
-<button>a button</button>
-<button class="filled" >a filled button</button>
+  <header>
+    <h1>
+      Title
+    </h1>
+  </header>
 
-<input type="submit" value="an input submit button" />
-<input type="submit" class="filled" value="a filled input submit button" />
+  <section>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </p>
+  </section>
+
+  <footer>
+    <p>
+      Thank you for reading !
+    </p>
+  </footer>
+
+</main>
 {% endhighlight %}
     </section>
 
-    <section class="container">
+    <section>
+      <h2>Buttons</h2>
+      <p>
+        <button>just a button</button>
+        <button disabled>a disabled button</button>
+      </p>
+      
+{% highlight html %}
+<a href="./"><button>a link button</button></a>
+<a href="./"><button disabled>a disabled link button</button></a>
+
+<button>a button</button>
+<button disabled>a disabled button</button>
+
+<input type="submit" value="an input submit button" />
+<input type="submit" disabled value="a disabled input submit button" />
+{% endhighlight %}
+    </section>
+
+    <section>
       <h2>Images</h2>
-      <p>Simply add an image tag, and voilà !</p>
+      <p>Simply add an image element, and voilà !</p>
       <img alt="Placeholder" src="https://picsum.photos/640/480?grayscale" />
 
 {% highlight html %}
@@ -222,29 +229,21 @@ import 'concrete.css'
 {% endhighlight %}
     </section>
 
-    <section class="container">
+    <section>
       <h2>Lists</h2>
       <p>The concrete list is simply marked by a square.</p>
-      <div class="row">
-        <div class="column">
-          <ul>
-            <li>Unordered element 1</li>
-            <li>Unordered element 2</li>
-          </ul>
-        </div>
-        <div class="column">
-          <ol>
-            <li>Ordered element 1</li>
-            <li>Ordered element 2</li>
-          </ol>
-        </div>
-        <div class="column">
-          <dl>
-            <dt>Description element 1</dt>
-            <dd>Description element 1.1</dd>
-          </dl>
-        </div>
-      </div>
+      <ul>
+        <li>Unordered element 1</li>
+        <li>Unordered element 2</li>
+      </ul>
+      <ol>
+        <li>Ordered element 1</li>
+        <li>Ordered element 2</li>
+      </ol>
+      <dl>
+        <dt>Description term</dt>
+        <dd>Description detail</dd>
+      </dl>
 
 {% highlight html %}
 <ul>
@@ -258,16 +257,17 @@ import 'concrete.css'
 </ol>
 
 <dl>
-  <dt>Description element 1</dt>
-  <dd>Description element 1.1</dd>
+  <dt>Description term</dt>
+  <dd>Description detail</dd>
 </dl>
 {% endhighlight %}
     </section>
 
-    <section class="container">
+    <section>
       <h2>Forms</h2>
       <form>
         <fieldset>
+          <legend>Please enter your information</legend>
           <div class="row">
             <div class="column">
               <label for="firstname">First Name</label>
@@ -294,6 +294,7 @@ import 'concrete.css'
 {% highlight html %}
 <form>
   <fieldset>
+    <legend>Please enter your information</legend>
 
     <label for="firstname">First Name</label>
     <input type="text" name="firstname" id="firstname">
@@ -319,7 +320,7 @@ import 'concrete.css'
 {% endhighlight %}
     </section>
 
-    <section class="container">
+    <section>
       <h2>Tables</h2>
       <table>
         <thead>
@@ -374,7 +375,7 @@ import 'concrete.css'
 {% endhighlight %}
     </section>
 
-    <section class="container">
+    <section>
       <h2>Blockquotes</h3>
       <blockquote>
         "I'm quoting myself" - <em>Louis Merlin</em>
@@ -387,7 +388,7 @@ import 'concrete.css'
 {% endhighlight %}
     </section>
 
-    <section class="container">
+    <section>
       <h2>Progress Bar</h2>
       <progress value="40" max="100">40%</progress>
 
@@ -396,7 +397,7 @@ import 'concrete.css'
 {% endhighlight %}
     </section>
 
-    <section class="container">
+    <section>
       <h2>Break line</h2>
       <hr/>
 
@@ -405,7 +406,7 @@ import 'concrete.css'
 {% endhighlight %}
     </section>
 
-    <section class="container">
+    <section>
       <h2>Sites using Concrete</h2>
       <ul>
         <li><a href="https://repfl.ch">repfl.ch</a></li>
@@ -413,13 +414,13 @@ import 'concrete.css'
       </ul>
     </section>
 
-
-    <footer class="container">
-    <hr />
+    <footer>
+      <hr />
       <p>
         Made with ♥ by <a href="https://louismerl.in">Louis Merlin</a>
       </p>
     </footer>
+
   </main>
 
 </body>

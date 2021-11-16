@@ -1,6 +1,6 @@
 # [concrete.css](https://concrete.style)
 
-> A simple and to the point CSS microframework
+> A simple and to the point classless CSS framework
 
 [![](https://img.shields.io/npm/v/concrete.css.svg)](https://www.npmjs.com/package/concrete.css)
 [![](https://img.shields.io/bundlephobia/minzip/concrete.css.svg)](https://bundlephobia.com/result?p=concrete.css)
@@ -8,7 +8,7 @@
 
 ## What is this ?
 
-This a CSS microframework, built for lightness and simplicity.
+This a classless CSS framework, built for lightness and simplicity.
 
 Concrete can be a great starting point for a simple website.
 
@@ -32,7 +32,7 @@ Just drop these lines into your html `<head>`:
 ### In your javascript project
 Add the dependencies:
 ```
-yarn add normalize.css concrete.css
+npm install normalize.css concrete.css
 ```
 Import them somewhere in your code:
 ```
