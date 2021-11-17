@@ -1,4 +1,4 @@
-/*! concrete.css v2.0.1 | MIT License | github.com/louismerlin/concrete.css */
+/*! concrete.css v2.0.2 | MIT License | github.com/louismerlin/concrete.css */
 
 /**
  * 1. Modify the base font-size to 62.5% so that 1.6rem = 16px.
@@ -11,11 +11,14 @@ html {
 }
 
 /**
- * Continue the global box-sizing modification.
+ * 1. Continue the global box-sizing modification.
+ * 2. Set the underline size for all elements.
  */
 
 *, ::after, ::before {
-  box-sizing: inherit;
+  box-sizing: inherit; /* 1 */
+  text-decoration: .2rem; /* 2 */
+  text-decoration-thickness: .2rem; /* 2 */
 }
 
 /**
@@ -189,6 +192,17 @@ fieldset, input, select, textarea {
 }
 
 /**
+ * 1. Set the font color for the placeholder in inputs.
+ * 2. Set font-style to italic for the placeholder in inputs.
+ */
+
+input::placeholder,
+textarea::placeholder {
+  color: #111; /* 1 */
+  font-style: italic; /* 2 */
+}
+
+/**
  * 1. Expand width to 100% for the table element.
  * 2. Remove the distance between the borders of adjacent table cells.
  */
@@ -335,7 +349,9 @@ hr {
     background: #111;
     color: #fff;
   }
-  a {
+  a,
+  input::placeholder,
+  textarea::placeholder {
     color: #fff;
   }
   button,
