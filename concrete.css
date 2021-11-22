@@ -1,4 +1,4 @@
-/*! concrete.css v2.0.2 | MIT License | github.com/louismerlin/concrete.css */
+/*! concrete.css v2.0.3 | MIT License | github.com/louismerlin/concrete.css */
 
 /**
  * 1. Modify the base font-size to 62.5% so that 1.6rem = 16px.
@@ -17,7 +17,6 @@ html {
 
 *, ::after, ::before {
   box-sizing: inherit; /* 1 */
-  text-decoration: .2rem; /* 2 */
   text-decoration-thickness: .2rem; /* 2 */
 }
 
