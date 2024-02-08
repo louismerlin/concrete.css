@@ -1,6 +1,25 @@
 /*! concrete.css v2.0.4 | MIT License | github.com/louismerlin/concrete.css */
 
 /**
+ * 1. Set universal color variables
+ */
+
+:root {
+  --fg: #111;
+  --bg: #fff;
+}
+
+/**
+ * Invert the colors if the user has dark mode activated.
+ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #fff;
+    --bg: #111;
+  }
+}
+
+/**
  * 1. Modify the base font-size to 62.5% so that 1.6rem = 16px.
  * 2. Set box-sizing globally to handle padding and border widths.
  */
@@ -29,8 +48,8 @@ html {
 body {
   font-size: 2rem; /* 1 */
   font-weight: 400; /* 1 */
-  background: #fff; /* 2 */
-  color: #111; /* 2 */
+  background: var(--bg); /* 2 */
+  color: var(--fg); /* 2 */
   font-family: Helvetica, Arial, sans-serif; /* 3 */
 }
 
@@ -39,7 +58,7 @@ body {
  */
 
 a {
-  color: #111;
+  color: var(--fg);
 }
 
 /**
@@ -106,9 +125,9 @@ input[type="submit"] {
   font-size: 2rem; /* 1 */
   font-weight: normal; /* 1 */
   margin-bottom: 1rem; /* 1 */
-  background: #fff; /* 2 */
-  color: #111; /* 2 */
-  border: .2rem solid #111; /* 2 */
+  background: var(--bg); /* 2 */
+  color: var(--fg); /* 2 */
+  border: .2rem solid var(--fg); /* 2 */
   border-radius: 0; /* 2 */
   cursor: pointer; /* 3 */
 }
@@ -139,7 +158,7 @@ ul {
  */
 
 fieldset {
-  border: .2rem solid #111;
+  border: .2rem solid var(--fg);
 }
 
 /**
@@ -175,9 +194,9 @@ select {
   padding: .4rem 1rem; /* 1 */
   width: 100%; /* 1 */
   font-size: 2rem; /* 1 */
-  color: #111; /* 2 */
-  background-color: #fff; /* 2 */
-  border: .2rem solid #111; /* 2 */
+  color: var(--fg); /* 2 */
+  background-color: var(--bg); /* 2 */
+  border: .2rem solid var(--fg); /* 2 */
   border-radius: 0; /* 2 */
 }
 
@@ -196,7 +215,7 @@ fieldset, input, select, textarea {
 
 input::placeholder,
 textarea::placeholder {
-  color: #111; /* 1 */
+  color: var(--fg); /* 1 */
   font-style: italic; /* 2 */
 }
 
@@ -240,7 +259,7 @@ td:last-child, th:last-child {
  */
 
 th {
-  border-bottom: .2rem solid #111; /* 1 */
+  border-bottom: .2rem solid var(--fg); /* 1 */
   text-align: left; /* 2 */
 }
 
@@ -249,7 +268,7 @@ th {
  */
 
 td {
-  border-bottom: .1rem solid #111;
+  border-bottom: .1rem solid var(--fg);
 }
 
 /**
@@ -262,7 +281,7 @@ blockquote, pre {
   margin-left: 0; /* 1 */
   margin-right: 0; /* 1 */
   padding: 1rem 1.6rem; /* 1 */
-  border-left: .2rem solid #111; /* 2 */
+  border-left: .2rem solid var(--fg); /* 2 */
   overflow-y: hidden; /* 3 */
 }
 
@@ -272,8 +291,8 @@ blockquote, pre {
  */
 
 pre {
-  border: 0.1rem dotted #111;
-  border-left: 0.2rem solid #111;
+  border: 0.1rem dotted var(--fg);
+  border-left: 0.2rem solid var(--fg);
 }
 
 /**
@@ -300,9 +319,9 @@ progress {
   overflow: hidden; /* 1 */
   padding: 0; /* 1 */
   width: 100%; /* 1 */
-  background: #fff; /* 2 */
-  color: #111; /* 2 */
-  border: .2rem solid #111; /* 2 */
+  background: var(--bg); /* 2 */
+  color: var(--fg); /* 2 */
+  border: .2rem solid var(--fg); /* 2 */
   border-radius: 0; /* 2 */
 }
 
@@ -311,7 +330,7 @@ progress {
  */
 
 progress::-webkit-progress-bar {
-  background-color: #fff;
+  background-color: var(--bg);
 }
 
 /**
@@ -319,7 +338,7 @@ progress::-webkit-progress-bar {
  */
 
 progress::-webkit-progress-value {
-  background-color: #111;
+  background-color: var(--fg);
 }
 
 /**
@@ -327,7 +346,7 @@ progress::-webkit-progress-value {
  */
 
 progress::-moz-progress-bar {
-  background-color: #111;
+  background-color: var(--fg);
 }
 
 /**
@@ -335,58 +354,6 @@ progress::-moz-progress-bar {
  */
 
 hr {
-  border: .1rem solid #111;
+  border: .1rem solid var(--fg);
 }
 
-/**
- * Invert the colors if the user has dark mode activated.
- */
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #111;
-    color: #fff;
-  }
-  a,
-  input::placeholder,
-  textarea::placeholder {
-    color: #fff;
-  }
-  button,
-  input[type="button"],
-  input[type="reset"],
-  input[type="submit"],
-  input[type="email"],
-  input[type="number"],
-  input[type="password"],
-  input[type="search"],
-  input[type="tel"],
-  input[type="text"],
-  input[type="url"],
-  textarea,
-  select,
-  progress {
-    background: #111;
-    color: #fff;
-    border-color: #fff;
-  }
-  fieldset {
-    border-color: #fff;
-  }
-  td,
-  th,
-  blockquote,
-  pre,
-  hr {
-    border-color: #fff;
-  }
-  progress::-webkit-progress-bar {
-    background-color: #111;
-  }
-  progress::-webkit-progress-value {
-    background-color: #fff;
-  }
-  progress::-moz-progress-bar {
-    background-color: #fff;
-  }
-}
