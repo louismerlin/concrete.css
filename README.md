@@ -1,6 +1,6 @@
 # [concrete.css](https://concrete.style)
 
-> A simple and to the point classless CSS framework
+> A simple and to the point classless CSS stylesheet
 
 [![](https://img.shields.io/npm/v/concrete.css.svg)](https://www.npmjs.com/package/concrete.css)
 [![](https://img.shields.io/bundlephobia/minzip/concrete.css.svg)](https://bundlephobia.com/result?p=concrete.css)
@@ -8,7 +8,7 @@
 
 ## What is this ?
 
-This a classless CSS framework, built for lightness and simplicity.
+This a classless CSS stylesheet, built for lightness and simplicity.
 
 Concrete can be a great starting point for a simple website.
 
