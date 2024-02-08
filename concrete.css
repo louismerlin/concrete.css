@@ -1,7 +1,7 @@
 /*! concrete.css v2.0.4 | MIT License | github.com/louismerlin/concrete.css */
 
 /**
- * 1. Set universal color variables
+ * Set universal color variables
  */
 
 :root {
@@ -12,6 +12,7 @@
 /**
  * Invert the colors if the user has dark mode activated.
  */
+
 @media (prefers-color-scheme: dark) {
   :root {
     --fg: #fff;
@@ -356,4 +357,3 @@ progress::-moz-progress-bar {
 hr {
   border: .1rem solid var(--fg);
 }
-
