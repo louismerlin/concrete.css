@@ -114,7 +114,7 @@ input[type="submit"] {
 }
 
 /**
- * 1. Invert the colors of the disabled button.
+ * 1. Set the border of a disabled button to be dashed.
  * 2. Add the not-allowed cursor when hovering a disabled button.
  */
 
@@ -122,9 +122,8 @@ button:disabled,
 input[type="button"]:disabled,
 input[type="reset"]:disabled,
 input[type="submit"]:disabled{
-  color: #fff; /* 1 */
-  background: #111; /* 1 */
-  cursor: not-allowed; /* 2 */
+  border-style: dashed; /* 1 */
+  cursor: not-allowed; /* 2 */ 
 }
 
 /**
@@ -370,13 +369,6 @@ hr {
     background: #111;
     color: #fff;
     border-color: #fff;
-  }
-  button:disabled,
-  input[type="button"]:disabled,
-  input[type="reset"]:disabled,
-  input[type="submit"]:disabled{
-    color: #111;
-    background: #fff;
   }
   fieldset {
     border-color: #fff;
