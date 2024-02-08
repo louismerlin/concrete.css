@@ -1,7 +1,7 @@
 {
   "name": "concrete.css",
   "description": "A simple and to the point classless CSS stylesheet",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "main": "concrete.css",
   "files": [
     "concrete.css"
