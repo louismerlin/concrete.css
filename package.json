@@ -3,6 +3,9 @@
   "description": "A simple and to the point classless CSS stylesheet",
   "version": "2.1.0",
   "main": "concrete.css",
+  "files": [
+    "concrete.css"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/louismerlin/concrete.css.git"
