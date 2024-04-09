@@ -1,14 +1,14 @@
 {
   "name": "concrete.css",
   "description": "A simple and to the point classless CSS stylesheet",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "main": "concrete.css",
   "files": [
-    "css"
+    "*.css"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/louismerlin/concrete.css.git"
+    "url": "git+https://github.com/louismerlin/concrete.css.git"
   },
   "author": "Louis Merlin <hello@louismerl.in>",
   "license": "MIT",
