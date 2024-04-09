@@ -4,7 +4,7 @@
   "version": "2.1.1",
   "main": "concrete.css",
   "files": [
-    "concrete.css"
+    "css"
   ],
   "repository": {
     "type": "git",
@@ -12,5 +12,11 @@
   },
   "author": "Louis Merlin <hello@louismerl.in>",
   "license": "MIT",
-  "homepage": "https://louismerlin.github.io/concrete.css/"
+  "homepage": "https://louismerlin.github.io/concrete.css/",
+  "devDependencies": {
+    "csso-cli": "^4.0.2"
+  },
+  "scripts": {
+    "prepublishOnly": "csso concrete.css -o concrete.min.css"
+  }
 }
