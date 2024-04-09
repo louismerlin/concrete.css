@@ -25,8 +25,8 @@ Inspired by [Milligram](https://milligram.io/) and [Skeleton](http://getskeleton
 ### In your HTML `<head>`
 Just drop these lines into your html `<head>`:
 ```
-<link rel="stylesheet" href="https://unpkg.com/normalize.min.css">
-<link rel="stylesheet" href="https://unpkg.com/concrete.min.css">
+<link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+<link rel="stylesheet" href="https://unpkg.com/concrete.css@2.1.2/concrete.min.css">
 ```
 
 ### In your javascript project
