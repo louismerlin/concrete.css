@@ -155,6 +155,31 @@ ul {
 }
 
 /**
+ * Set a margin around the navigation bar
+ */
+nav {
+  margin: 2rem 0;
+}
+
+/**
+ * 1. Remove padding around the navigation bar's inner unordered list
+ * 2. Remove list style for the navigation bar's inner unordered list
+ */
+nav ul {
+  padding: 0; /* 1 */
+  list-style: none; /* 2 */
+}
+
+/**
+ * 1. Set margins around the navigation bar's inner unordered list items
+ * 2. Make navigation bar unordered list elements render horizontally
+ */
+nav ul li {
+  margin: 0 .2rem; /* 1 */
+  display: inline-block; /* 2 */
+}
+
+/**
  * Set the border around a fieldset.
  */
 
@@ -292,8 +317,8 @@ blockquote, pre {
  */
 
 pre {
-  border: 0.1rem dotted var(--fg);
-  border-left: 0.2rem solid var(--fg);
+  border: .1rem dotted var(--fg);
+  border-left: .2rem solid var(--fg);
 }
 
 /**
