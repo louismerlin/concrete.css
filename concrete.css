@@ -64,8 +64,6 @@ a {
 
 /**
  * 1. Stretch figure to full width of the section.
- * 2. Add border at bottom.
- * 3. Add spacing after the element.
  */
 figure {
   margin: 0; /* 1 */
