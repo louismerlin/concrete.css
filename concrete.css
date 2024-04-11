@@ -69,17 +69,19 @@ a {
  */
 figure {
   margin: 0; /* 1 */
-  border-bottom: .2rem solid var(--fg); /* 2 */
-  padding-bottom: 1rem; /* 3 */
 }
 
 /**
  * 1. Right-align text 
  * 2. Make figure caption a little smaller than normal text.
+ * 3. Add border at bottom.
+ * 4. Add spacing after the element.
  */
 figcaption {
   text-align: right; /* 1 */
   font-size: 1.6rem; /* 2 */
+  border-bottom: .2rem solid var(--fg); /* 3 */
+  padding-bottom: 1rem; /* 4 */
 }
 
 /**
