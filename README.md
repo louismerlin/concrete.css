@@ -14,8 +14,6 @@ Concrete can be a great starting point for a simple website.
 
 It also switches to a dark theme if your OS uses one.
  
-Best used in pair with [normalize.css](https://necolas.github.io/normalize.css/).
-
 Inspired by [Milligram](https://milligram.io/) and [Skeleton](http://getskeleton.com/).
 
 #### Please feel free to open an issue and/or contribute !
@@ -23,19 +21,17 @@ Inspired by [Milligram](https://milligram.io/) and [Skeleton](http://getskeleton
 ## Get Started
 
 ### In your HTML `<head>`
-Just drop these lines into your html `<head>`:
+Just drop this line into your html `<head>`:
 ```
-<link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
-<link rel="stylesheet" href="https://unpkg.com/concrete.css@2.1.2/concrete.min.css">
+<link rel="stylesheet" href="https://unpkg.com/concrete.css@3.0.0/concrete.min.css">
 ```
 
 ### In your javascript project
-Add the dependencies:
+Add the dependency:
 ```
-npm install normalize.css concrete.css
+npm install concrete.css
 ```
-Import them somewhere in your code:
+Import it somewhere in your code:
 ```
-import 'normalize.css'
 import 'concrete.css'
 ```
