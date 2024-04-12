@@ -76,7 +76,7 @@ figure {
  */
 figcaption {
   text-align: right; /* 1 */
-  font-size: 1.6rem; /* 2 */
+  font-size: 0.8em; /* 2 */
   border-bottom: .2rem solid var(--fg); /* 3 */
   padding-bottom: .2rem; /* 4 */
 }
