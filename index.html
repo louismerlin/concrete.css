@@ -16,15 +16,14 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
-  <link rel="stylesheet" href="https://unpkg.com/concrete.css@2.1.2/concrete.css">
+  <link rel="stylesheet" href="./concrete.min.css">
 
   <meta name="theme-color" content="#ffffff">
 
   <style>
     .badge {
-      height: 3.5rem;
-      border: .2rem solid #111;
+      height: 1.75rem;
+      border: .1rem solid #111;
     }
 
     figure.highlight {
@@ -46,16 +45,16 @@
       width: 100%;
     }
 
-    @media (min-width: 40.0rem) {
+    @media (min-width: 30.0rem) {
       .row {
         flex-direction: row;
-        margin: 0 -1rem;
-        width: calc(100% + 2rem);
+        margin: 0 -.5rem;
+        width: calc(100% + 1rem);
       }
 
       .row .column {
         margin-bottom: inherit;
-        padding: 0 1.0rem;
+        padding: 0 .5rem;
       }
     }
   </style>
@@ -64,24 +63,23 @@
 
 <body>
 
-  <main>
+  <header>
+    <h1>concrete.css</h1>
+    <p>A simple and to the point classless CSS stylesheet</p>
+    <p>
+      <a href="https://github.com/louismerlin/concrete.css">GitHub</a> |
+      <a href="https://www.npmjs.com/package/concrete.css">npm</a> |
+      <a href="https://unpkg.com/concrete.css">CDN</a>
+    </p>
+  </header>
 
-    <header>
-      <h1>concrete.css</h1>
-      <p>A simple and to the point classless CSS stylesheet</p>
-      <p>
-        <a href="https://github.com/louismerlin/concrete.css">GitHub</a> |
-        <a href="https://www.npmjs.com/package/concrete.css">npm</a> |
-        <a href="https://unpkg.com/concrete.css">CDN</a>
-      </p>
-    </header>
+  <main>
 
     <section>
       <h2>What is this ?</h2>
       <p>This is a classless CSS stylesheet, built for lightness and simplicity.</p>
       <p>Concrete can be a great starting point for a simple website.</p>
       <p>It also switches to a <strong>dark theme</strong> if your OS uses one.</p>
-      <p>Best used in pair with <a href="https://necolas.github.io/normalize.css/">normalize.css</a>.</p>
       <p>Inspired by <a href="https://milligram.io">Milligram</a> and <a href="http://getskeleton.com/">Skeleton</a>.
       </p>
       <p>
@@ -97,15 +95,13 @@
     <section>
       <h2>Get Started</h2>
       <h3>In your HTML <code>&lt;head&gt;</code></h3>
-      <p>Just drop these lines into your HTML head.</p>
-      <pre><code>&lt;link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"&gt;
-&lt;link rel="stylesheet" href="https://unpkg.com/concrete.css@2.1.2/concrete.min.css"&gt;</code></pre>
+      <p>Just drop this line into your HTML head:</p>
+      <pre><code>&lt;link rel="stylesheet" href="https://unpkg.com/concrete.css@2.1.2/concrete.min.css"&gt;</code></pre>
       <h3>In your javascript project</h3>
-      <p>Add the dependencies:</p>
-      <pre><code>npm install normalize.css concrete.css</code></pre>
-      <p>Import them somewhere in your code:</p>
-      <pre><code>import 'normalize.css'
-import 'concrete.css'</code></pre>
+      <p>Add the dependency:</p>
+      <pre><code>npm install concrete.css</code></pre>
+      <p>Import it somewhere in your code:</p>
+      <pre><code>import 'concrete.css'</code></pre>
     </section>
 
     <section>
@@ -114,13 +110,13 @@ import 'concrete.css'</code></pre>
       <ul>
         <li>left-click and "View Page Source"</li>
         <li>left-click and "Inspect"</li>
-        <li>read the <a href="https://github.com/louismerlin/concrete.css/blob/main/index.html">index.html</a> on GitHub</li>
+        <li>read the <a href="https://github.com/louismerlin/concrete.css/blob/main/index.html">index.html</a> on GitHub
+        </li>
       </ul>
     </section>
 
     <section>
       <h2>Typography</h2>
-      <p>Concrete does not redefine headings, although normalize does. This is what you can expect:</p>
       <div class="row">
         <div class="column">
           <h2>h2 heading</h2>
@@ -275,14 +271,14 @@ import 'concrete.css'</code></pre>
       </ul>
     </section>
 
-    <footer>
-      <hr>
-      <p>
-        Made with ♥ by <a href="https://louismerl.in">Louis Merlin</a>
-      </p>
-    </footer>
-
   </main>
+
+  <footer>
+    <hr />
+    <p>
+      Made with ♥ by <a href="https://louismerl.in">Louis Merlin</a>
+    </p>
+  </footer>
 
 </body>
 
