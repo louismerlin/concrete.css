@@ -10,3 +10,6 @@ node_modules/
 
 # Output of 'npm pack'
 *.tgz
+
+# NPM package lock
+package-lock.json
