@@ -23,7 +23,7 @@ Inspired by [Milligram](https://milligram.io/) and [Skeleton](http://getskeleton
 ### In your HTML `<head>`
 Just drop this line into your html `<head>`:
 ```
-<link rel="stylesheet" href="https://unpkg.com/concrete.css@3.0.0/concrete.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/concrete.css@3.0.0/concrete.min.css">
 ```
 
 ### In your javascript project
