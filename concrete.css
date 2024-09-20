@@ -273,13 +273,16 @@ select:not([multiple]) {
 
 input[type="checkbox"] + label, input[type="radio"] + label {
   display: inline-block;
-  position: relative;
-  top: -.8rem;
+  margin-bottom: .4rem;
+}
+
+label + label {
+  padding-top: .4rem;
 }
 
 input[type="radio"], input[type="checkbox"] {
   appearance: none;
-  margin: 0.2rem 0.2rem .8rem .6rem;
+  margin: -.1rem .2rem 0rem .2rem;
   display: inline-block;
   width: .8rem;
   height: .8rem;
