@@ -1,7 +1,7 @@
 /*! concrete.css v3.0.0 | MIT License | github.com/louismerlin/concrete.css */
 
 /**
- * Set universal color, font and border-radius variables
+ * Set universal color, main width, font and border-radius variables
  */
 
 :root {
@@ -9,6 +9,7 @@
   --bg: #fff;
   --font: Helvetica, Arial, sans-serif;
   --font-h: Helvetica, Arial, sans-serif;
+  --main-width: 640px;
   --radius: 0px;
 }
 
@@ -104,14 +105,15 @@ main section + section {
 
 /** 
  * 1. Center the root main/header/footer elements horizontally.
- * 2. Set the width of the elements to 640px, with padding for mobile screens.
+ * 2. Set the width of the elements to the main-width variable, with padding 
+ *    for mobile screens.
  */
 
 body > header,
 body > main,
 body > footer {
   margin: auto; /* 1 */
-  max-width: 660px; /* 2 */
+  max-width: calc(var(--main-width) + 20px); /* 2 */
   padding-left: 10px; /* 2 */
   padding-right: 10px; /* 2 */
   width: 100%; /* 2 */
