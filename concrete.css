@@ -7,6 +7,9 @@
 :root {
   --fg: #111;
   --bg: #fff;
+  --font: Helvetica, Arial, sans-serif;
+  --font-h: Helvetica, Arial, sans-serif;
+  --radius: 4px;
 }
 
 /**
@@ -43,14 +46,14 @@ html {
 /**
  * 1. Remove body margin.
  * 2. Set the text and background color to white and black by default.
- * 3. Set the font-family to Helvetica, or equivalent.
+ * 3. Set the font-family to the variable font.
  */
 
 body {
   margin: 0; /* 1 */
   background: var(--bg); /* 2 */
   color: var(--fg); /* 2 */
-  font-family: Helvetica, Arial, sans-serif; /* 3 */
+  font-family: var(--font); /* 3 */
 }
 
 /**
@@ -125,6 +128,10 @@ body > header {
   font-size: 1.2em; /* 2 */
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-h);
+}
+
 h1 { font-size: 2em; }
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.17em; }
@@ -159,7 +166,7 @@ input[type="submit"] {
   background: var(--bg); /* 2 */
   color: var(--fg); /* 2 */
   border: .1rem solid var(--fg); /* 2 */
-  border-radius: 0; /* 2 */
+  border-radius: var(--radius); /* 2 */
   cursor: pointer; /* 3 */
 }
 
@@ -215,6 +222,7 @@ nav ul li {
 
 fieldset {
   border: .1rem solid var(--fg);
+  border-radius: var(--radius);
 }
 
 /**
@@ -253,7 +261,7 @@ select {
   color: var(--fg); /* 2 */
   background-color: var(--bg); /* 2 */
   border: .1rem solid var(--fg); /* 2 */
-  border-radius: 0; /* 2 */
+  border-radius: var(--radius); /* 2 */
   font-family: Helvetica, Arial, sans-serif; /* 3 */
 }
 
@@ -364,6 +372,7 @@ pre > code {
   font-size: .8rem; /* 2 */
 }
 
+
 /**
  * 1. Modify the display of the progress bar in all browsers.
  * 2. Set the colors and border of the progress bar.
@@ -380,7 +389,7 @@ progress {
   background: var(--bg); /* 2 */
   color: var(--fg); /* 2 */
   border: .1rem solid var(--fg); /* 2 */
-  border-radius: 0; /* 2 */
+  border-radius: var(--radius); /* 2 */
 }
 
 /**
