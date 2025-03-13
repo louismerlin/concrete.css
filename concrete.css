@@ -1,7 +1,7 @@
 /*! concrete.css v3.0.0 | MIT License | github.com/louismerlin/concrete.css */
 
 /**
- * Set universal color variables
+ * Set universal color, font and border-radius variables
  */
 
 :root {
@@ -46,7 +46,7 @@ html {
 /**
  * 1. Remove body margin.
  * 2. Set the text and background color to white and black by default.
- * 3. Set the font-family to the variable font.
+ * 3. Set the font-family.
  */
 
 body {
@@ -127,6 +127,10 @@ body > header {
   padding-bottom: 8rem; /* 1 */
   font-size: 1.2em; /* 2 */
 }
+
+/**
+ * Set the font-family for all section headings.
+ */
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-h);
