@@ -35,3 +35,10 @@ Import it somewhere in your code:
 ```
 import 'concrete.css'
 ```
+
+## Related projects
+
+These repositories are forks of `concrete.css`, or were heavily inspired by it:
+
+- [indie.css](https://github.com/chr15m/indie.css)
+- [beton.css](https://github.com/murgeljm/beton.css)
