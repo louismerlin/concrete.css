@@ -262,7 +262,7 @@ select {
   background-color: var(--bg); /* 2 */
   border: .1rem solid var(--fg); /* 2 */
   border-radius: var(--radius); /* 2 */
-  font-family: Helvetica, Arial, sans-serif; /* 3 */
+  font-family: var(--font); /* 3 */
 }
 
 /**
