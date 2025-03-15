@@ -23,7 +23,7 @@ Inspired by [Milligram](https://milligram.io/) and [Skeleton](http://getskeleton
 ### In your HTML `<head>`
 Just drop this line into your html `<head>`:
 ```
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/concrete.css/3.0.0/concrete.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/concrete.css/3.1.0/concrete.min.css">
 ```
 
 ### In your javascript project
@@ -35,3 +35,10 @@ Import it somewhere in your code:
 ```
 import 'concrete.css'
 ```
+
+## Related projects
+
+These repositories are forks of `concrete.css`, or were heavily inspired by it:
+
+- [indie.css](https://github.com/chr15m/indie.css)
+- [beton.css](https://github.com/murgeljm/beton.css)
