@@ -275,7 +275,7 @@ select {
 
 fieldset, input, select, textarea {
   margin: 0 0 .8rem 0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: var(--font);
 }
 
 select:not([multiple]) {
@@ -301,7 +301,7 @@ input[type="radio"], input[type="checkbox"] {
   display: inline-block;
   width: .8rem;
   height: .8rem;
-  border-radius: 0%;
+  border-radius: var(--radius);
   border: .1rem solid var(--fg);
 }
 
