@@ -215,6 +215,7 @@
       <form>
         <fieldset>
           <legend>Please enter your information</legend>
+
           <div class="row">
             <div class="column">
               <label for="firstname">First Name</label>
@@ -225,6 +226,7 @@
               <input type="text" name="lastname" id="lastname">
             </div>
           </div>
+
           <label for="os">Operating System</label>
           <select name="os" id="os">
             <option value="GNU/Linux">GNU/Linux</option>
@@ -232,6 +234,21 @@
             <option value="Windows">Windows</option>
             <option value="Other">Other</option>
           </select>
+
+          <label>Browser</label>
+          <input type="radio" id="firefox" name="browser" value="F">
+          <label for="firefox">Firefox</label><br/>
+          <input type="radio" id="chrome" name="browser" value="C">
+          <label for="chrome">Chrome</label><br/>
+          <input type="radio" id="safari" name="browser" value="S">
+          <label for="safari">Safari</label><br/>
+          <input type="radio" id="other" name="browser" value="O">
+          <label for="other">Other</label>
+
+          <label>Do you agree?</label>
+          <input type="checkbox" id="chbx" name="agree" value="Yes!">
+          <label for="chbx">I agree</label>
+
           <label for="comment">Comment</label>
           <textarea name="comment" id="comment" placeholder="Please leave a comment..."></textarea>
           <input type="submit" value="Send">
